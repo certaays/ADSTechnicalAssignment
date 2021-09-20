@@ -1,20 +1,22 @@
 --DECLARE--
 grade: number
-a: number
+n: number
 finalGrade: number
 
 --DECLARATION
 START
 INPUT grade
+
 IF grade <=100 AND grade >= 68 THEN
-	a <- grade mod 5
-	IF a > 2 THEN
-		finalGrade <- grade + (5-a)
+	n <- grade mod 5
+	IF n > 2 THEN
+		finalGrade <- grade + (5-n)
 	ELSE
-		finalgRade <- grade
+		finalGrade <- grade
 	ENDIF
-ELSE grade < 68 AND grade >= 0 THEN 
-	finalGrade <-grade
+ELSE IF grade < 68 AND grade >= 0 THEN 
+	finalGrade <- grade
+ENDIF
 ENDIF
 
 DISPLAY finalGrade
