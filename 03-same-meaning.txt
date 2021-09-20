@@ -20,7 +20,7 @@ x <- length(kata)-1
 
 FOR i TO x DO
   IF kata[i] <- ' ' THEN
-    kata[i] <- '/0'
+    kata[i] <- RETURN 0
   ELSE
     new[j] <- kata[i]
     j <- j+1
