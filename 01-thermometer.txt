@@ -1,5 +1,5 @@
 --DECLARE--
-n: number
+n, celcius: number
 tipe: String
 
 --DESCRIPTION--
